@@ -1,0 +1,77 @@
+
+/******************* VARIÁVEIS *******************/
+
+:root {
+	--cor-de-fundo: #EBECEE;
+	--branco: #FFFFFF;
+	--laranja: #EB9B00;
+	--azul: #002F52;
+	--azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+	--transparente: transparent;
+
+	--fonte-principal: 'Poppins', sans-serif;
+}
+
+/******************* VARIÁVEIS *******************/
+
+.topicos {
+	background: var(--azul-degrade);
+	text-align: center;
+	padding: 1em 2em;
+}
+
+.topicos__titulo {
+	font-family: var(--fonte-principal);
+	font-size: 16px;
+	font-weight: 300;
+	color: var(--branco);
+	margin-bottom: 1em;
+}
+
+.topicos__lista {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.topicos__item {
+	margin: 2em 0.5em;
+}
+
+.topicos__link {
+	font-family: var(--fonte-principal);
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--branco);
+	background-color: var(--laranja);	
+	padding: 1em;
+	text-decoration: none;
+	transition: 600ms;
+}
+
+.topicos__link:hover {
+	background-color: var(--branco);
+	color: var(--azul);
+	transition: 600ms;
+}
+
+@media screen and (min-width: 1024px) {
+	.topicos {
+		padding: 4em 2em;
+	}
+
+	.topicos__titulo {
+		font-size: 24px;
+	}
+
+	.topicos__link {
+		font-size: 24px;
+	}
+
+}
+
+@media screen and (min-width: 1728px) {
+	.topicos {
+		padding: 3em 30vw;
+	}
+}

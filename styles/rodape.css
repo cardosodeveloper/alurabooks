@@ -1,0 +1,172 @@
+
+/******************* VARIÁVEIS *******************/
+
+:root {
+	--cor-de-fundo: #EBECEE;
+	--branco: #FFFFFF;
+	--laranja: #EB9B00;
+	--azul: #002F52;
+	--cinza: #474646;
+	--cinza-claro: #858585;
+	--preto: #000000;
+
+	--botao-github: #532f9d;
+    --botao-github-efeito: #8363c5;	
+
+	--azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+	--transparente: transparent;
+
+	--fonte-principal: 'Poppins', sans-serif;
+}
+
+/******************* VARIÁVEIS *******************/
+
+hr {
+	margin: 0;
+}
+
+.pre-rodape {
+	background-color: var(--branco);
+	padding: 1em;
+	font-family: var(--fonte-principal);
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.lista-rodape {
+	display: none;
+}
+
+.rodape {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--branco);
+	background-color: var(--preto);
+	padding: 75px 0 75px 0;
+	text-align: center;
+	font-family: var(--fonte-principal);
+	font-weight: 400;
+}
+
+
+.rodape__botao__dev {
+	width: 25%;
+    border-radius: 8px;
+    padding: 0.5em;
+    background-color: var(--botao-github);
+    color: var(--branco-principal);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+    transition: 600ms;
+    margin: 20px 0;
+}
+
+.rodape__botao__dev:hover {
+    background-color: var(--botao-github-efeito);
+    transition: 600ms;
+}
+
+
+
+
+/******** Início botão lateral GitHub Desktop ********/
+
+.botao__github__mobile {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:15px;
+    background-color:var(--botao-github);
+    color:var(--branco);
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:1000;
+    transition: 600ms;
+}
+
+.botao__github__mobile a{
+    text-decoration: none;
+    color: var(--fonte-secundária);
+}
+
+.botao__github__mobile i{
+    margin-top: 16px;
+}
+
+.botao__github__mobile:hover {
+    background-color: var(--botao-github-efeito);
+    transition: 600ms;
+}
+
+/******** Final botão lateral GitHub Desktop ********/
+
+
+.rodape__botao__dev {
+	width: 60%;
+}
+
+.redes__desktop {
+	display: none;
+}	
+
+.rodape__logo {
+	width: 25%;
+}
+
+
+@media screen and (min-width: 1024px) {
+	.pre-rodape {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.lista-rodape {
+		display: block;
+	}
+
+	.rodape__titulo {
+		font-size: 24px;
+	}
+
+	.lista-rodape__titulo {
+		font-size: 16px;
+		color: var(--cinza-claro);
+	}
+
+	.lista-rodape__item {
+		display: flex;
+		align-items: center;
+		margin: 0.6em 0;
+	}
+
+	.lista-rodape__link {
+		color: var(--cinza);
+		text-decoration: none;
+		margin-left: 0.6em;
+	}
+
+	.rodape__botao__dev {
+		width: 30%;
+	}
+
+}
+
+@media screen and (min-width: 1728px) {
+	.lista-rodape {
+		border-left: 1px solid var(--cinza-claro);
+		padding-left: 1em;
+	}
+
+	.pre-rodape {
+		padding: 3em 0;
+	}
+	
+	.rodape__botao__dev {
+		width: 30%;
+	}
+
+}
